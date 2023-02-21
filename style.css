@@ -7,19 +7,22 @@ body{
 }
 
 
-section{
+main{
    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; 
+    min-height: 100vh;
 }
 
 .card__container{
-    width: 17em;  
-    position: absolute;
+    max-width: 20em; 
+    
+    /* position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%); */
+    padding:1rem;
     border-radius: 20px;
     background: hsl(0, 0%, 100%);
     box-shadow: 0px 2px 10px hsl(220, 15%, 55%);
@@ -32,7 +35,7 @@ section{
 }
 
 .card__qr img{
-width: 100%;
+max-width: 100%;
 border-radius: 20px;
 }
 
@@ -40,13 +43,15 @@ border-radius: 20px;
 .card__text{
     text-align: center;
     padding:0 1em 1em 1em;
+    margin: 0.5em;
 }
 
-.card__text h3{
+.card__text h1{
     margin: 0;
+    font-size: 1.5rem;
 }
 
 
 .card__text p{
-    font-size: 15px;
+    font-size: 0.9375rem;
 }
